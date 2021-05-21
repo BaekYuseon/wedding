@@ -1,0 +1,181 @@
+/* 콘텐츠 */
+#content_wrap {
+    box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#main_content {
+    height: auto;
+}
+
+/* 카테고리 */
+#category {
+    overflow: hidden;
+    margin: 20px 0px;
+    border-top: 2px solid #f6e9e3;
+    border-bottom: 2px solid #f6e9e3;
+}
+
+#category img {
+    width: 90%;
+    height: 400px;
+}
+
+#category a p {
+    color: #343434;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#category p:hover {
+    color: #f6e9e3;
+}
+
+#category img:hover {
+    width: 93%;
+}
+
+.wedding_dress {
+    width: 48%;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.bridesmaid_dress {
+    width: 48%;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    border-right: none;
+    float: right;
+    right: 0;
+    margin-top: 10px;
+}
+
+.party_dress {
+    width: 48%;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    float: right;
+}
+
+.accessory {
+    width: 48%;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+}
+
+/* 스토어 */
+#store_wrap {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    color: #343434;
+    margin-bottom: 10px;
+}
+
+#store_wrap img {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #f6e9e3;
+}
+
+.store_title {
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.store_content{
+    overflow: hidden;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.store_img_1 {
+    float: left;
+    width: 400px;
+    height: 400px;
+
+}
+
+.store_main {
+    display: inline-block;
+    line-height: 70px;
+}
+
+.store_main p {
+    font-size: 25px;
+}
+
+.store_search {
+    background-color: #343434;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 3px 3px #757070;
+}
+
+.store_search a {
+    color: #9e9e9e;
+    font-size: 25px;
+    line-height: 100px;
+}
+
+.store_img_2 {
+    float: right;
+    width: 400px;
+    height: 400px;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1270px) {
+    #category a p {
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .wedding_dress {
+        width: 100%;
+        height: 480px;
+        border-bottom: 2px solid #f6e9e3;
+    }
+    .bridesmaid_dress {
+        width: 100%;
+        height: 480px;
+        border-bottom: 2px solid #f6e9e3;
+    }
+    .party_dress {
+        width: 100%;
+        height: 480px;
+        border-bottom: 2px solid #f6e9e3;
+    }
+    .accessory {
+        width: 100%;
+        height: 480px;
+        border-bottom: 2px solid #f6e9e3;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #store_wrap {
+        height: auto;
+    }
+
+    .store_img_1 {
+        display: none;
+    }
+
+    .store_img_2 {
+        display: none;
+    }
+}

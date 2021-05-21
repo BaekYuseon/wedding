@@ -4,9 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wedding Dresses</title>
+    <link rel="stylesheet" href="library/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
 </head>
 <body>
-    안녕하세요. 테스트 페이지입니다.
+    <!-- 헤더 -->
+    <div id="header_wrap">
+        <div id="main_header">
+            <div id="header_sub">
+                <ul>
+                    <li class="facebook">
+                        <a><i class="fab fa-2x fa-facebook-square"></i></a>
+                    </li>
+                    <li class="insta">
+                        <a><i class="fab fa-2x fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div id="header_lnb">
+                <a class="hamburger"><i class="fas fa-2x fa-bars"></i></a>
+                <a class="map" href="pages/store.html"><i class="fas fa-2x fa-map-marker-alt"></i></a>
+                <a class="search"><i class="fas fa-2x fa-search"></i></a>
+                <div class="search_wrap">
+                    <div class="mini_search">
+                        <i class="fas fa-lg fa-times"></i><input onkeyup="filter()" type="text" id="value" placeholder="Search...">
+                        <label for="value"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="small_right">
+                <a class="hamburger"><i class="fas fa-2x fa-bars"></i></a>
+            </div>
+        </div>
+            
+        <div id="header_gnb">
+            <ul class="header_menu">
+                <li><a href="pages/bride/all_dress.html">WEDDING DRESSES</a></li>
+                <li><a href="pages/bridesmaids.html">BRIDESMAIDS</a></li>
+                <li><a href="pages/party.html">PARTY</a></li>
+                <li><a href="pages/store.html">STORES</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 사이드메뉴 -->
+    <div id="side_menu_wrap">
+        <div id="side_menu_header">
+            <div class="close_menu">
+                <a><i class="fas fa-2x fa-times"></i></a>
+            </div> 
+            <div class="side_title">
+                MENU
+            </div>   
+        </div>
+        <div id="side_menu_gnb">
+            <ul>
+                <li>WEDDING DRESSES</li>
+                <li>
+                    <ul class="bride">
+                        <li><a href="pages/bride/all_dress.html">All Wedding Dresses</a></li>
+                        <li><a href="pages/bride/mermaid.html">Mermaid</a></li>
+                        <li><a href="pages/bride/ballgown.html">Ballgown</a></li>
+                        <li><a href="pages/bride/aLine.html">A Line</a></li>
+                        <li><a href="pages/bride/fit&flare.html">Fit & Flare</a></li>
+                        <li><a href="pages/bride/sheath.html">Sheath</a></li>
+                    </ul>
+                </li>
+                <li>BRIDESMAIDS</li>
+                <li>
+                    <ul class="bridesmaids">
+                        <li><a href="pages/bridesmaids.html">Bridesmaids Dresses</a></li>
+                        <li><a href="pages/accessory.html">Bridesmaids Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/party.html">PARTY</a></li>
+                <li><a href="pages/store.html">STORES</a></li>
+            </ul>
+        </div>
+        <div id="side_menu_lnb">
+            <a class="search"><i class="fas fa-2x fa-search"></i></a>
+            <a class="map" href="pages/store.html"><i class="fas fa-2x fa-map-marker-alt"></i></a>
+        </div>
+    </div>
+
+    <!-- 콘텐츠 -->
+    <div id="content_wrap">
+        <div id="main_content">
+            <ul class="rslides" id="slider1">
+                <li><img src="images/bride-1486004_1920.jpg" alt="메인이미지1"></li>
+                <li><img src="images/bride-1822488_1920.jpg" alt="메인이미지2"></li>
+                <li><img src="images/wedding-dress-301817_1920.jpg" alt="메인이미지3"></li>
+                <li><img src="images/wedding-dresses-1486005_1920.jpg" alt="메인이미지4"></li>
+                <li><img src="images/woman-4081760_1920.jpg" alt="메인이미지5"></li>
+            </ul>
+        </div>
+        <div id="category">
+            <div class="wedding_dress">
+                <a href="pages/bride/all_dress.html">
+                    <img src="images/marriage-2150887_1920.jpg" alt="웨딩드레스">
+                    <br>
+                    <p>Wedding Dresses</p>
+                </a>
+            </div>
+            <div class="bridesmaid_dress">
+                <a href="pages/bridesmaids.html">
+                    <img src="images/bridesmaids/bouquet-1246307_1920.jpg" alt="신부들러리">
+                    <br>
+                    <p>Bridesmaids</p> 
+                </a>
+            </div>
+            <div class="party_dress">
+                <a href="pages/party.html">
+                    <img src="images/party/35a4b9d58cca7b1e3f42cab8ac5fbb63.jpg" alt="파티드레스">
+                    <br>
+                    <p>Party</p>
+                </a>
+            </div>
+            <div class="accessory">
+                <a href="pages/accessory.html">
+                    <img src="images/shoes-1014606_1920.jpg" alt="악세사리">
+                    <br>
+                    <p>Accessory</p>
+                </a>    
+            </div>
+        </div>
+        <div id="store_wrap">
+            <div class="store_title">Find Your Store</div>
+            <div class="store_content">
+                <div class="store_img_1">
+                    <img src="images/wedding-dresses-1486005_1920.jpg" alt="스토어이미지1">
+                </div>
+                <div class="store_main">
+                    <p>Try on a dress.<br> Feel the Morilee magic.</p>
+                    <div class="store_search">
+                        <a href="pages/store.html">FIND A STORE <i class="fas fa-2x fa-search"></i></a> 
+                    </div>
+                </div>
+                <div class="store_img_2">
+                    <img src="images/woman-4081760_1920.jpg" alt="스토어이미지2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div id="footer_wrap">
+        <div class="footer_logo">
+            <a href="index.html"><img src="images/logo.png" alt="푸터로고"></a>
+        </div>
+        <div class="number">
+            T.032-***-**** <br>
+            MON ~ FRI <br> 09:00 ~ 18:00
+        </div>
+        <div class="contact">
+            <a class="email"><i class="far fa-3x fa-envelope"></i></a>
+            <a href="https://m.facebook.com/?locale2=ko_KR" class="facebook"><i class="fab fa-3x fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/" class="insta"><i class="fab fa-3x fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

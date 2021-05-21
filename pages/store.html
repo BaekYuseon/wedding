@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Store</title>
+    <link rel="stylesheet" href="../css/store.css">
+    <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <div id="header_wrap">
+        <div id="main_header">
+            <div id="header_sub">
+                <ul>
+                    <li class="facebook">
+                        <a href="https://m.facebook.com/?locale2=ko_KR"><i class="fab fa-2x fa-facebook-square"></i></a>
+                    </li>
+                    <li class="insta">
+                        <a href="https://www.instagram.com/"><i class="fab fa-2x fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="로고"></a>
+            </div>
+            <div id="header_lnb">
+                <a class="hamburger"><i class="fas fa-2x fa-bars"></i></a>
+                <a class="map" href="store.html"><i class="fas fa-2x fa-map-marker-alt"></i></a>
+                <a class="search"><i class="fas fa-2x fa-search"></i></a>
+                <div class="search_wrap">
+                    <div class="mini_search">
+                        <i class="fas fa-lg fa-times"></i><input onkeyup="filter()" type="text" id="value" placeholder="Search...">
+                        <label for="value"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="small_right">
+                <a class="hamburger"><i class="fas fa-2x fa-bars"></i></a>
+            </div>
+        </div>
+            
+        <div id="header_gnb">
+            <ul class="header_menu">
+                <li><a href="bride/all_dress.html">WEDDING DRESSES</a></li>
+                <li><a href="bridesmaids.html">BRIDESMAIDS</a></li>
+                <li><a href="party.html">PARTY</a></li>
+                <li><a href="store.html">STORES</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 사이드메뉴 -->
+    <div id="side_menu_wrap">
+        <div id="side_menu_header">
+            <div class="close_menu">
+                <a><i class="fas fa-2x fa-times"></i></a>
+            </div> 
+            <div class="side_title">
+                MENU
+            </div>   
+        </div>
+        <div id="side_menu_gnb">
+            <ul>
+                <li>WEDDING DRESSES</li>
+                    <ul class="bride">
+                        <li><a href="bride/all_dress.html">All Wedding Dresses</a></li>
+                        <li><a href="bride/mermaid.html">Mermaid</a></li>
+                        <li><a href="bride/ballgown.html">Ballgown</a></li>
+                        <li><a href="bride/aLine.html">A Line</a></li>
+                        <li><a href="bride/fit&flare.html">Fit & Flare</a></li>
+                        <li><a href="bride/sheath.html">Sheath</a></li>
+                    </ul>
+                <li>BRIDESMAIDS</li>
+                    <ul class="bridesmaids">
+                        <li><a href="bridesmaids.html">Bridesmaids Dresses</a></li>
+                        <li><a href="accessory.html">Bridesmaids Accessories</a></li>
+                    </ul>
+                <li><a href="party.html">PARTY</a></li>
+                <li><a href="store.html">STORES</a></li>
+            </ul>
+        </div>
+        <div id="side_menu_lnb">
+            <a class="search"><i class="fas fa-2x fa-search"></i></a>
+            <a class="map" href="store.html"><i class="fas fa-2x fa-map-marker-alt"></i></a>
+        </div>
+    </div>
+
+    <!-- 콘텐츠 -->
+    <div id="store_wrap">
+        <div id="store_title">
+            Find Your Store
+        </div>
+        <div id="store_content">
+            <div id="store_intro">
+                <h1>Weeding</h1>
+                <h1>인천광역시 남동구 **동 **빌딩</h1>
+                <h1>032-***-****</h1>
+                <h1>MON ~ FRI <br> 09:00 ~ 18:00</h1>
+            </div>
+            <div id="store_map">
+                <div id="map">map</div>
+            </div>
+        </div>
+    </div>
+
+        <!-- 푸터 -->
+    <div id="footer_wrap">
+        <div class="footer_logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="푸터로고"></a>
+        </div>
+        <div class="number">
+            T.032-***-**** <br>
+            MON ~ FRI <br> 09:00 ~ 18:00
+        </div>
+        <div class="contact">
+            <a class="email"><i class="far fa-3x fa-envelope"></i></a>
+            <a href="https://m.facebook.com/?locale2=ko_KR" class="facebook"><i class="fab fa-3x fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/" class="insta"><i class="fab fa-3x fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=70dff2e199179011f31c08b7babaaf6d"></script>
+    <script src="../js/store.js"></script>
+</body>
+</html>

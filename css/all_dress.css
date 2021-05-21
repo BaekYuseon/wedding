@@ -1,0 +1,107 @@
+#category_content {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+}
+
+#category_header {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#category_name {
+    background-color: #9e9e9e;
+    padding: 20px;
+}
+
+#category_name h1 {
+    font-size: 50px;
+}
+
+#category_gnb {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #f6e9e3;
+    margin-bottom: 5px;
+}
+
+.bride {
+    text-align: center;
+}
+
+.bride li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.bride li a {
+    color: #9e9e9e;
+    font-size: 20px;
+}
+
+.bride li a:hover {
+    color: #e7bea0;
+}
+
+#dress_content {
+    max-width: 1210px;
+    margin: 0 auto;
+    height: auto;
+}
+
+#all_dresses {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#all_dresses h1 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#all_dresses a h1{
+    color: black;
+}
+
+#all_dresses a p{
+    color: #9e9e9e;
+}
+
+#all_dresses h1:hover {
+    color: #e7bea0;
+}
+
+.dresses {
+    width: 400px;
+    text-align: left;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+
+/* 이미지영역 */
+.dress_img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.dress_img img { 
+    width:100%; 
+    height:100%; 
+    border:0px; 
+    display:block;
+    position:absolute; 
+    transition: 1s; 
+}
+.dress_img:hover img:last-child { opacity:0 }
+
+
+
